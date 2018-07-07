@@ -52,3 +52,9 @@ h2, h3, .question {
     width: 25%;
     margin-left: 37.5%;
 }
+.music {
+    float: right;
+    background: transparent;
+    height: 55px;
+    width: 350px;
+}
