@@ -34,56 +34,57 @@ $(document).ready(function() {
 	};
 /*
 	var trivia = 
-	questions: ['What super villain once broke Batman's back, leaving him crippled and wheelchair-bound?',
-				'What were the names of Bruce Wayne's parents?',
-				'Who is credited with creating Batman?',
-				'What Batman villain formerly worked as a zoologist?',
-				'The original Batgirl was related to what familiar Batman character?',
-				'Which of these Bat-villains was introduced first?',
-				'Who is Professor Jonathan Crane?',
-				'What is the original Robin's secret identity?',
-				'Who was Batman's first love interest?',
-				'Where does Batman send his most twisted foes for rehabilitation?'],
-		    q1: ['Joker',
-				"Ra's Al Ghul",
-				'Bane',
-				'Killer Croc'],
-		    q2: ['Brad & Jenn',
-				'Thomas & Martha',
-				'Wayne & Alice',
-				'Michael & Keaton'],
-		    q3: ['Stan Lee',
-				'Bob Kane',
-				'Bruce Wayne',
-				'Jerry Siegel']
-		    q4: ['Manbat',
-				'Poison Ivy',
-				'The Penguin',
-				'Killer Croc'],
-		    q5: ['Commissioner Gordon',
-				'Batwoman',
-				'Alfred',
-				'Robin'],
-		    q6: ['Catwoman',
-				'The Penguin',
-				'Mr. Freeze',
-				'The Riddler'],
-		    q7: ['Bane',
-				 'Mad Hatter',
-				'Scarecrow',
-				'Riddler'],
-		    q8: ['Jason Todd',
-				'Dick Grayson',
-				'Dick Drake',
-				'Bruce Wayne'],
-	    	q9: ['Dinah Lance',
-				 'Kathy Kane',
-				 'Vickie Vaughn',
-				 'Julie Madison'],
-		    q10: ['Alcotraz',
-				  'Arkham Asylum',
-				  'San Quentin',
-				  'Gotham Asylum']		 						
+    questions: 
+    ['What super villain once broke Batman's back, leaving him crippled and wheelchair-bound?',
+        ['Joker',
+		 "Ra's Al Ghul",
+		 'Bane',
+		 'Killer Croc'],
+    'What were the names of Bruce Wayne's parents?',
+        ['Brad & Jenn',
+		 'Thomas & Martha',
+		 'Wayne & Alice',
+		 'Michael & Keaton'],        
+    'Who is credited with creating Batman?',
+        ['Stan Lee',
+		 'Bob Kane',
+		 'Bruce Wayne',
+		 'Jerry Siegel']       
+    'What Batman villain formerly worked as a zoologist?',
+        ['Manbat',
+		 'Poison Ivy',
+		 'The Penguin',
+		 'Killer Croc'],     
+    'The original Batgirl was related to what familiar Batman character?',
+        ['Commissioner Gordon',
+		 'Batwoman',
+		 'Alfred',
+		 'Robin'],        
+    'Which of these Bat-villains was introduced first?',
+        ['Catwoman',
+		 'The Penguin',
+		 'Mr. Freeze',
+		 'The Riddler'],        
+    'Who is Professor Jonathan Crane?',
+        ['Bane',
+		 'Mad Hatter',
+		 'Scarecrow',
+		 'Riddler'],       
+    'What is the original Robin's secret identity?',
+        ['Jason Todd',
+		 'Dick Grayson',
+		 'Dick Drake',
+		 'Bruce Wayne'],        
+    'Who was Batman's first love interest?',
+        ['Dinah Lance',
+		 'Kathy Kane',
+		 'Vickie Vaughn',
+		 'Julie Madison'],       
+    'Where does Batman send his most twisted foes for rehabilitation?'],
+		['Alcotraz',
+		 'Arkham Asylum',
+		 'San Quentin',
+		 'Gotham Asylum']    		 						
 */
 var correct = 0;
 var wrong = 0;
@@ -252,29 +253,7 @@ function showScore() {
 	$('.timer').empty();
 
 }
-//		for (var i=0; i<questionArray.length; i++) {
-//			$('.question').append('<p>'+questionArray[i].question+'</p>');
-//			for (var j=0; j<questionArray[i].possibleAnswers.length; j++) {
-//				$('.answers').append('<span><button id="possibleAnswer">' + questionArray[i].possibleAnswers[j]+ '</button></span>');
-//			}
-//			$('#possibleAnswers').on('click', function() {
 
-
-//		console.log("click");
-//		countdownTimer.start();
-//		for (var i = 0; i < questionArray.length; i++) {
-//			console.log(i);
-
-//			$('.timer').html('<h3>'+countdownTimer.time + ' seconds remaining</h3>');
-//			$('.question').html(questionArray[i].question);
-//			while (countdownTimer != 0) {
-
-//			}
-		
-//	});
-//	$('#startButton').click(countdownTimer.start);
-
-//}
 setup();
 $('.answerchoice').on('click', function() {
  console.log($(this));
