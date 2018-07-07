@@ -15,7 +15,7 @@ $(document).ready(function() {
 		count: function() {
 				countdownTimer.time--;
 				console.log(countdownTimer.time);
-//				$('.timer').html(countdownTimer.time);
+
 			if (countdownTimer.time >= 0) {
 				$('.timer').html('<h3>' + countdownTimer.time + ' seconds remaining</h3>');
 			}
@@ -198,8 +198,7 @@ function loadQuestion(questionSelection) {
   $("#buttonB").text(questionArray[questionSelection].possibleAnswers[1]).show();
   $("#buttonC").text(questionArray[questionSelection].possibleAnswers[2]).show();
   $("#buttonD").text(questionArray[questionSelection].possibleAnswers[3]).show();
-//  getAnswer();  
-//  nextQuestion(index);
+
 }
 
 //function nextQuestion() {
@@ -301,6 +300,4 @@ if ((answerChosen == 'D') && (questionArray[index].flags[3] == true)) {
  }
 });
 
-
-//	$('#start').click(countdownTimer.start);
 });
